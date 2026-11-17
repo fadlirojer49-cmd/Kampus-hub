@@ -1,0 +1,52 @@
+/* =========================
+   DATA MAHASISWA
+========================= */
+
+#data-mahasiswa {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #777;
+}
+
+.search-mahasiswa {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search-mahasiswa label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#searchMahasiswa {
+    width: 350px;
+    padding: 8px;
+    border: 1px solid #777;
+    font-size: 14px;
+}
+
+.item-mahasiswa {
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.item-mahasiswa:hover {
+    background: #eeeeee;
+    color: #164a91;
+}
+
+#detail-mahasiswa {
+    margin-top: 15px;
+    padding: 12px;
+    border: 1px solid #777;
+    background: #f5f5f5;
+}
+
+#detail-mahasiswa h3 {
+    margin-top: 0;
+}
+
+#detail-mahasiswa p {
+    margin: 6px 0;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KampusHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header>
+            <div class="label">HEADER</div>
+            <h1>KampusHub</h1>
+            <h2>Papan Pengumuman Universitas Wahidiyah</h2>
+        </header>
+
+        <!-- NAV -->
+        <nav>
+            <span class="label">NAV</span>
+            <a href="#pengumuman">Pengumuman</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#mahasiswa">Mahasiswa</a>
+        </nav>
+
+        <!-- MAIN -->
+        <main>
+
+            <div class="label">MAIN · H1</div>
+
+            <h2>Pengumuman terbaru</h2>
+
+            <!-- PENCARIAN MAHASISWA -->
+            <section id="mahasiswa" class="search-section">
+
+                <h3>Pencarian Mahasiswa</h3>
+
+                <div class="search-box">
+                    <label for="search">Cari NIM / Nama</label>
+
+                    <input type="text" id="search" placeholder="Masukkan NIM atau nama mahasiswa...">
+
+                    <button id="btnCari">Cari</button>
+                </div>
+
+                <!-- HASIL PENCARIAN -->
+                <div id="hasil-pencarian"></div>
+
+            </section>
+
+
+            <!-- PENGUMUMAN -->
+            <section id="pengumuman">
+
+                <div class="label">ARTICLE — TIGA PENGUMUMAN</div>
+
+                <article>
+                    <h3>Jadwal Ujian Tengah Semester</h3>
+
+                    <p>
+                        Ujian Tengah Semester akan dilaksanakan
+                        sesuai jadwal yang telah ditentukan kampus.
+                    </p>
+
+                    <small>19 Oktober 2026 · akademik</small>
+                </article>
+
+                <article>
+                    <h3>Pendaftaran Beasiswa Kampus</h3>
+
+                    <p>
+                        Mahasiswa dapat melakukan pendaftaran
+                        beasiswa melalui bagian administrasi kampus.
+                    </p>
+
+                    <small>20 Oktober 2026 · beasiswa</small>
+                </article>
+
+                <article>
+                    <h3>Jam Buka Perpustakaan</h3>
+
+                    <p>
+                        Perpustakaan kampus dibuka setiap hari kerja
+                        untuk membantu mahasiswa mencari referensi.
+                    </p>
+
+                    <small>21 Oktober 2026 · fasilitas</small>
+                </article>
+
+            </section>
+
+
+            <!-- TENTANG -->
+            <section id="tentang" class="tentang">
+
+                <div class="label">H2</div>
+
+                <h2>Tentang aplikasi ini</h2>
+
+                <p>
+                    KampusHub adalah website sederhana untuk
+                    menampilkan pengumuman kampus dan mencari
+                    data mahasiswa berdasarkan NIM atau nama.
+                </p>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <div class="label">FOOTER</div>
+
+            <p>
+                Pemrograman Web · 2026 · M Rojer Fadli
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script type="module" src="data.js"></script>
+
+</body>
+
+</html>

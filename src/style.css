@@ -1,0 +1,449 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+
+    min-height: 100vh;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+    background: #166534;
+
+    color: white;
+
+    padding: 30px 20px;
+
+    text-align: center;
+}
+
+
+.header h1 {
+    font-size: 36px;
+
+    margin-bottom: 8px;
+}
+
+
+.header p {
+    font-size: 17px;
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.container {
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 30px;
+}
+
+
+/* ========================================
+   SECTION
+======================================== */
+
+section {
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+section h2 {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+}
+
+
+/* ========================================
+   SEARCH
+======================================== */
+
+#searchBarang {
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+#searchBarang:focus {
+    border-color: #166534;
+}
+
+
+/* ========================================
+   PRODUK
+======================================== */
+
+.produk-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.item-barang {
+    border: 1px solid #e0e0e0;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    background: #fff;
+
+    transition: 0.2s;
+}
+
+
+.item-barang:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.item-barang h3 {
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+
+.item-barang p {
+    color: #666;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+
+.item-barang strong {
+    display: block;
+
+    color: #166534;
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+
+.item-barang button {
+    width: 100%;
+
+    border: none;
+
+    padding: 11px;
+
+    border-radius: 8px;
+
+    background: #166534;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.item-barang button:hover {
+    background: #14532d;
+}
+
+
+/* ========================================
+   KERANJANG
+======================================== */
+
+.item-keranjang {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.item-keranjang p {
+    margin: 5px 0;
+
+    color: #666;
+}
+
+
+.item-keranjang button {
+    background: #dc2626;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 14px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+
+.item-keranjang button:hover {
+    background: #b91c1c;
+}
+
+
+.kosong {
+    color: #777;
+
+    padding: 10px 0;
+}
+
+
+/* ========================================
+   TOTAL
+======================================== */
+
+.total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 20px;
+
+    padding-top: 20px;
+
+    border-top: 2px solid #eee;
+
+    font-size: 20px;
+}
+
+
+.total strong {
+    color: #166534;
+}
+
+
+/* ========================================
+   PEMBAYARAN
+======================================== */
+
+.pembayaran-section label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+#uang-bayar {
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 9px;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+
+.kembalian {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    background: #ecfdf5;
+
+    border: 1px solid #bbf7d0;
+}
+
+
+.kembalian strong {
+    color: #166534;
+
+    font-size: 22px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    text-align: center;
+
+    background: #14532d;
+
+    color: white;
+
+    padding: 25px;
+
+    margin-top: 20px;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ========================================
+   TABLET
+   768px - 1023px
+======================================== */
+
+@media (max-width: 1023px) {
+
+    .container {
+        padding: 25px;
+    }
+
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+
+    .produk-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+   320px - 767px
+======================================== */
+
+@media (max-width: 767px) {
+
+    .header {
+        padding: 25px 15px;
+    }
+
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+
+    .header p {
+        font-size: 14px;
+    }
+
+
+    .container {
+        padding: 15px;
+    }
+
+
+    section {
+        padding: 18px;
+
+        margin-bottom: 15px;
+    }
+
+
+    section h2 {
+        font-size: 20px;
+    }
+
+
+    .produk-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .item-keranjang {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .item-keranjang button {
+        width: 100%;
+    }
+
+
+    .total {
+        font-size: 17px;
+    }
+
+
+    .kembalian {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+}
